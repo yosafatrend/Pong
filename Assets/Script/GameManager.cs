@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour
 
         }
 
-        if (GUI.Button(new Rect(Screen.width / -60, Screen.height - 73, 120, 53), "TOGGLE \nDRBUG INFO"))
+        if (GUI.Button(new Rect(Screen.width / -60, Screen.height - 73, 120, 53), "TOGGLE \nDEBUG INFO"))
         {
             isDebugWindowShown = !isDebugWindowShown;
             trajectory.enabled = !trajectory.enabled;

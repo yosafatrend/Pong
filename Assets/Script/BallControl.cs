@@ -35,16 +35,16 @@ public class BallControl : MonoBehaviour
 
     void PushBall()
     {
-        float yRandomInitialForce = Random.Range(-yInitialForce, yInitialForce);
-        float randomDirection = Random.Range(0.0f, 2.0f);
+        yInitialForce = yInitialForce * ((Random.Range(0, 1) * 2) - 1);
+        float randomDirection = Random.Range(0, 2);
          
         if (randomDirection < 1.0f)
         {
-            rb.AddForce(new Vector2(-xInitialForce, yRandomInitialForce));
+            rb.AddForce(new Vector2(-xInitialForce, yInitialForce));
         }
         else
         {
-            rb.AddForce(new Vector2(xInitialForce, yRandomInitialForce));
+            rb.AddForce(new Vector2(xInitialForce, yInitialForce));
         }
     }
 
